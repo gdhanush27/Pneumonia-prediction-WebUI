@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import Nav from './Nav';
+import './Login.css';
+
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -27,12 +29,11 @@ const Login = () => {
   return (
     <div >
       <Nav/>
-      <br/>
-      <br/>
-      <label>Username:</label>
+      <div className="login-container">
+      <label htmlFor="username">Username:</label>
       <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
       <br/><br/>
-      <label>Password:</label>
+      <label htmlFor="password">Password:</label>
       <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
       <br/><br/>
       <button onClick={handleLogin} disabled={loading}>
@@ -41,6 +42,7 @@ const Login = () => {
       {loading && <p>Logging...</p>}
       {successMessage && <p style={{ color: 'green' }}>{successMessage}</p>}
       {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
+      </div>
     </div>
   );
 };

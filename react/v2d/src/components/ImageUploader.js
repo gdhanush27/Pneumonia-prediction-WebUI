@@ -31,12 +31,12 @@ const ImageUploader = () => {
   return (
     <div>
         <Nav/>
-        <br/><br/>
+        <div className="login-container">
       <input type="file" onChange={handleFileChange} />
       <button onClick={handleUpload} disabled={loading}>Upload and Process Image</button>
       {loading && <p>Processing...</p>}
       {responseText && <p>{responseText}</p>}
-    </div>
+    </div></div>
   );
 };
 
