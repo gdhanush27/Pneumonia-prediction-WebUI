@@ -35,8 +35,7 @@ def login():
     data = request.get_json()
     username = data.get('username')
     password = data.get('password')
-    time.sleep(5)
-    print(username)
+    time.sleep(3)
     # Replace this with your actual login logic
     if username == 'admin' and password == 'admin@123':
         return jsonify({"message": "Login successful"})
