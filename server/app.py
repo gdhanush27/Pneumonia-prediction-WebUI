@@ -7,7 +7,7 @@ import tensorflow as tf
 import numpy as np
 app = Flask(__name__)
 
-model = tf.keras.models.load_model('D:\\Users\\Desktop\\Sem V\\DL\\DL-projects\\mini project\\model\\pneumonia_detection_model.keras')
+model = tf.keras.models.load_model(r'react\v2d\src\model\pneumonia_detection_model.keras')
 
 def predict_img(image):
     gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
