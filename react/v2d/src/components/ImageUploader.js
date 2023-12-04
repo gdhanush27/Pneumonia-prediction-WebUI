@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import Nav from './Nav';
+import './ImageUploader.css';
+
 const ImageUploader = () => {
   const [selectedFile, setSelectedFile] = useState(null);
   const [responseText, setResponseText] = useState('');
@@ -15,7 +17,7 @@ const ImageUploader = () => {
     formData.append('image', selectedFile);
 
     try {
-      const response = await axios.post('http://192.168.208.61:5000/process_image', formData, {
+      const response = await axios.post('http://192.168.135.61:5000/process_image', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -35,8 +37,8 @@ const ImageUploader = () => {
           <label>Upload x-ray image for pneumonia prediction</label><br/><br/>
       <input type="file" onChange={handleFileChange} /><br/>
       <button onClick={handleUpload} disabled={loading}>Upload and Process Image</button>
-      {loading && <p>Processing...</p>}
-      {responseText && <p>{responseText}</p>}
+      {loading ? <p>Processing...</p> : <p>{responseText}</p>}
+      
     </div></div>
   );
 };

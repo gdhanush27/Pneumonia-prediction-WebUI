@@ -60,6 +60,7 @@ def process_image():
         s="Person is not affected with Pneumonia."
     else:
         s="Person is affected with Pneumonia."
+    time.sleep(2) #to reduce cpu over load
     return jsonify({"text": s})
 
 if __name__ == '__main__':

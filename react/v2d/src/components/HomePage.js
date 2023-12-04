@@ -19,7 +19,7 @@ const HomePage = () => {
         <p>
           To get started, you can upload a chest X-ray image, and the model will analyze it
           to predict whether pneumonia is present or not. 
-          <h5>*NOTE : The model is 83 percent accurate*</h5>
+          <h5>*NOTE : The model accuracy is 83.166 %*</h5>
         </p>
       </section>
 
