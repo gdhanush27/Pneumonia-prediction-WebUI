@@ -38,7 +38,7 @@ def login():
     time.sleep(5)
     print(username)
     # Replace this with your actual login logic
-    if username == '21alr012' and password == 'ttpod123':
+    if username == 'admin' and password == 'admin@123':
         return jsonify({"message": "Login successful"})
     else:
         return jsonify({"error": "Invalid credentials"}), 401
