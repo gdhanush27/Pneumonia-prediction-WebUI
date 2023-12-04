@@ -1,10 +1,11 @@
 import React from 'react';
 import './HomePage.css'; // Import your CSS file
 import { Link } from 'react-router-dom';
-import Nav from './Nav';
 const HomePage = () => {
   return (
+    <div>
     <div className="home-container">
+        
       <header>
         <h1>Pneumonia Prediction Project</h1>
       </header>
@@ -27,7 +28,7 @@ const HomePage = () => {
           Get Started
         </Link>
       </section>
-    </div>
+    </div></div>
   );
 };
 
