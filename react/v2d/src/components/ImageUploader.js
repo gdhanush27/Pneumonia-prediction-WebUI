@@ -35,7 +35,7 @@ const ImageUploader = () => {
         <Nav/>
         <div className="login-container">
           <label>Upload x-ray image for pneumonia prediction</label><br/><br/>
-      <input type="file" onChange={handleFileChange} /><br/>
+      <input type="file" accept="image/*" onChange={handleFileChange} /><br/>
       <button onClick={handleUpload} disabled={loading}>Upload and Process Image</button>
       {loading ? <p>Processing...</p> : <p>{responseText}</p>}
       
