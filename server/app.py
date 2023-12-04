@@ -30,24 +30,11 @@ def add_cors_headers(response):
 
 app.after_request(add_cors_headers)
 
-@app.route('/login', methods=['POST'])
-def login():
-    data = request.get_json()
-    username = data.get('username')
-    password = data.get('password')
-    time.sleep(3)
-    # Replace this with your actual login logic
-    if username == 'admin' and password == 'admin@123':
-        return jsonify({"message": "Login successful"})
-    else:
-        return jsonify({"error": "Invalid credentials"}), 401
-
 @app.route('/process_image', methods=['POST'])
 
 def process_image():
     if 'image' not in request.files:
         return jsonify({"error": "No image provided"}), 400
-
     image = request.files['image']
     image = Image.open(image)
     image = np.array(image)

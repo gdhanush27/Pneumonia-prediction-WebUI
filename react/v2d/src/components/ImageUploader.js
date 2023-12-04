@@ -17,7 +17,7 @@ const ImageUploader = () => {
     formData.append('image', selectedFile);
 
     try {
-      const response = await axios.post('http://192.168.135.61:5000/process_image', formData, {
+      const response = await axios.post('flask-url/process_image', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
