@@ -28,6 +28,11 @@ const HomePage = () => {
           Get Started
         </Link>
       </section>
+      <section>
+        <Link to="/DonationPage" className="upload-link">
+        Donation Page
+        </Link>
+      </section>
     </div></div>
   );
 };
