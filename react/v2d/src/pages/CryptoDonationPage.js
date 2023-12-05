@@ -8,6 +8,7 @@ const CryptoDonationPage = () => {
   const cryptoWalletAddress = '0x3e5c823b3D91e16C9E1fbb4A4CFfED10d8396935'; // Replace with your actual cryptocurrency wallet address
 
   return (
+    <>
     <div className="crypto-donation-container">
       <h2 className="crypto-donation-title">Donate via Crypto Wallet</h2><br/>
       <p className="crypto-donation-text">
@@ -32,7 +33,8 @@ const CryptoDonationPage = () => {
       <p className="crypto-thank-you">
         Thank you for supporting our cause!
       </p>
-      <section>
+      </div><div>
+      <section >
       <Link to="/" className="upload-link">
           Home page    
         </Link>
@@ -42,7 +44,7 @@ const CryptoDonationPage = () => {
         Image Uploader
         </Link>
       </section>
-    </div>
+    </div></>
   );
 };
 

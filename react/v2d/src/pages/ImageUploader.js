@@ -36,7 +36,7 @@ const ImageUploader = () => {
         <div className="login-container">
           <label>Upload x-ray image for pneumonia prediction<br/>Supported file types (.jpg , .jpeg) :</label><br/><br/>
       <input type="file" accept=".jpg,.jpeg" onChange={handleFileChange} /><br/>
-      <button onClick={handleUpload} disabled={loading}>Upload and Process Image</button>
+      <button style={{ cursor: loading ? 'not-allowed' : 'pointer' }} onClick={handleUpload} disabled={loading}>Upload and Process Image</button>
       {loading ? <p>Processing...</p> : <p>{responseText}</p>}
       
     </div></div>

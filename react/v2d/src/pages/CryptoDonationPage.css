@@ -2,7 +2,9 @@
 
 .crypto-donation-container {
     text-align: center;
-    margin: 20px;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px;
   }
   
   .crypto-donation-title {
