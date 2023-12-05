@@ -1,5 +1,5 @@
 // src/CryptoDonationPage.js
-import React from 'react';
+import React, { useEffect } from 'react';
 import CopyToClipboardButton from '../components/CopyToClipboardButton';
 import './CryptoDonationPage.css';
 import { Link } from 'react-router-dom';
@@ -7,6 +7,12 @@ import { Link } from 'react-router-dom';
 const CryptoDonationPage = () => {
   const cryptoWalletAddress = '0x3e5c823b3D91e16C9E1fbb4A4CFfED10d8396935'; // Replace with your actual cryptocurrency wallet address
 
+  useEffect(() => {
+    return () => {
+      document.title = 'Donation Page';
+    };
+  }, []);
+  
   return (
     <>
     <div className="crypto-donation-container">

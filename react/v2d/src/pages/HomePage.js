@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
 import './HomePage.css'; // Import your CSS file
 import { Link } from 'react-router-dom';
 const HomePage = () => {
+
+  useEffect(() => {
+    return () => {
+      document.title = 'Home page';
+    };
+  }, []);
+  
   return (
     <div>
+      
     <div className="home-container">
         
       <header>

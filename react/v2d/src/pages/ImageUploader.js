@@ -1,9 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect} from 'react';
 import axios from 'axios';
 import Nav from '../components/Nav';
 import './ImageUploader.css';
 
 const ImageUploader = () => {
+  
+  useEffect(() => {
+    return () => {
+      document.title = 'Image Uploader';
+    };
+  }, []);
+
   const [selectedFile, setSelectedFile] = useState(null);
   const [responseText, setResponseText] = useState('');
   const [loading, setLoading] = useState(false);
