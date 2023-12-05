@@ -1,6 +1,6 @@
 // src/CryptoDonationPage.js
 import React from 'react';
-import CopyToClipboardButton from './CopyToClipboardButton';
+import CopyToClipboardButton from '../components/CopyToClipboardButton';
 import './CryptoDonationPage.css';
 import { Link } from 'react-router-dom';
 

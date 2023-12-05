@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import Nav from './Nav';
+import Nav from '../components/Nav';
 import './ImageUploader.css';
 
 const ImageUploader = () => {

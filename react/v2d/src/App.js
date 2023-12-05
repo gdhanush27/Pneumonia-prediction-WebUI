@@ -1,7 +1,7 @@
 import React from 'react';
-import ImageUploader from './components/ImageUploader';
-import HomePage from './components/HomePage';
-import CryptoDonationPage from './components/CryptoDonationPage';
+import ImageUploader from './pages/ImageUploader';
+import HomePage from './pages/HomePage';
+import CryptoDonationPage from './pages/CryptoDonationPage';
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
 const App = () => {
   return (
