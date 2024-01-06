@@ -1,6 +1,6 @@
 import React from 'react';
 import ImageUploader from './pages/ImageUploader';
-import HomePage from './pages/HomePage';
+import SignIn from './components/googleSignin/signIn';
 import CryptoDonationPage from './pages/CryptoDonationPage';
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
 const App = () => {
@@ -8,7 +8,7 @@ const App = () => {
     <div>
       <BrowserRouter>
 			<Routes>
-				<Route path="/" element={<HomePage/>} />
+				<Route path="/" element={<SignIn/>} />
 				<Route path="/ImageUploader" element={<ImageUploader/>} />
         <Route path="/DonationPage" element={<CryptoDonationPage/>} />
 			</Routes>

@@ -3,7 +3,10 @@ import React, { useEffect } from 'react';
 import './HomePage.css'; // Import your CSS file
 import { Link } from 'react-router-dom';
 const HomePage = () => {
-
+  const logout =()=>{
+    localStorage.clear()
+    window.location.reload()
+}
   useEffect(() => {
     return () => {
       document.title = 'Home page';
@@ -41,6 +44,9 @@ const HomePage = () => {
         <Link to="/DonationPage" className="upload-link">
         Donation Page
         </Link>
+      </section>
+      <section>
+        <button onClick={logout}>Logout</button>
       </section>
     </div></div>
   );
