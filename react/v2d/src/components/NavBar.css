@@ -1,37 +1,38 @@
-/* Reset some default styles */
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Style for the navigation bar */
-  .navbar {
-    background-color: #333; /* Set the background color */
-    overflow: hidden; /* Clear floats */
-  }
-  
-  .navbar ul {
-    list-style-type: none; /* Remove bullet points from the list */
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  .navbar li {
-    float: left; /* Float the list items horizontally */
-  }
-  
-  .navbar a {
-    display: block;
-    color: white; /* Set the text color */
-    text-align: center;
-    padding: 14px 16px; /* Padding for each link */
-    text-decoration: none; /* Remove underlines from links */
-  }
-  
-  /* Change color on hover */
-  .navbar a:hover {
-    background-color: #ddd; /* Light grey background on hover */
-    color: black; /* Change text color on hover */
-  }
-  
+/* styles.css */
+
+nav {
+  background-color: #333;
+  height: 10%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  padding: '20px';
+  margin-right: 15px;
+}
+
+li:last-child {
+  margin-right: 0;
+  margin-left: auto; /* Move the About link to the right */
+}
+
+li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+li a:hover {
+  background-color: #555;
+}

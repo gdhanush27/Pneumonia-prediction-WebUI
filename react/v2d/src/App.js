@@ -1,16 +1,14 @@
 import React from 'react';
-import ImageUploader from './pages/ImageUploader';
-import SignIn from './components/googleSignin/signIn';
-import CryptoDonationPage from './pages/CryptoDonationPage';
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
+import HomePage from './pages/HomePage';
+import ImageUploader from './pages/ImageUploader';
 const App = () => {
   return (
     <div>
       <BrowserRouter>
 			<Routes>
-				<Route path="/" element={<SignIn/>} />
+				<Route path="/" element={<HomePage/>} />
 				<Route path="/ImageUploader" element={<ImageUploader/>} />
-        <Route path="/DonationPage" element={<CryptoDonationPage/>} />
 			</Routes>
 		</BrowserRouter>
     </div>
