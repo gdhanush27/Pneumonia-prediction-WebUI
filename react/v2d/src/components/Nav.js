@@ -14,6 +14,7 @@ const NavBar = () => {
             localStorage.setItem("email",data.user.email)
             localStorage.setItem("photoURL",data.user.photoURL)
             localStorage.setItem("name",data.user.displayName)
+            window.location.href="/"
         })
     }
     const logout =()=>{
