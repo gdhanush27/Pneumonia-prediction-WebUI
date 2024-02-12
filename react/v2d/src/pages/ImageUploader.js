@@ -51,7 +51,7 @@ const ImageUploader = () => {
     formData.append('model', selectedValue);
 
     try {
-      const response = await axios.post('https://nepal-refrigerator-chief-equity.trycloudflare.com/process_image', formData, {
+      const response = await axios.post('http://127.0.0.1:5000/process_image', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
