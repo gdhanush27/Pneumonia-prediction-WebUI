@@ -19,9 +19,9 @@ const HomePage = () => {
 
   return (
     <div>
-      
+      <NavBar/>
     <div className="home-container">
-        <NavBar/>
+        
       <header>
         <h1>Pneumonia Prediction Project</h1>
       </header>

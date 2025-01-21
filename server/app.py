@@ -7,8 +7,8 @@ import tensorflow as tf
 import numpy as np
 app = Flask(__name__)
 app.config[r'E:\\GIT\\Pneumoia-prediction-WebUI\\server\\uploads'] = 'uploads'
-model1 = tf.keras.models.load_model(r'server\model\pneumonia_detection_model_v1.keras')
-model2 = tf.keras.models.load_model(r'server\model\pneumonia_detection_model_v2.keras')
+model1 = tf.keras.models.load_model(r'E:\GIT\Pneumoia-prediction-WebUI\server\model\pneumonia_detection_model_v1.keras')
+model2 = tf.keras.models.load_model(r'E:\GIT\Pneumoia-prediction-WebUI\server\model\pneumonia_detection_model_v2.keras')
 
 # def predict_img(image):
 #     gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
